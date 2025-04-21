@@ -1,0 +1,29 @@
+{'loss': 0.8275, 'grad_norm': 6.55619478225708, 'learning_rate': 2.9600000000000005e-06, 'epoch': 0.94}                                        
+{'loss': 0.9259, 'grad_norm': 8.308083534240723, 'learning_rate': 2.16e-06, 'epoch': 0.96}                                                     
+{'loss': 0.884, 'grad_norm': 8.976078033447266, 'learning_rate': 1.36e-06, 'epoch': 0.98}                                                      
+{'loss': 0.877, 'grad_norm': 9.664286613464355, 'learning_rate': 5.6e-07, 'epoch': 0.99}                                                       
+{'train_runtime': 117.7655, 'train_samples_per_second': 84.915, 'train_steps_per_second': 5.307, 'train_loss': 1.0388518646240235, 'epoch': 1.0}
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 625/625 [01:57<00:00,  5.31it/s]
+
+Congratulations on completing your fine-tuning run! Here's an interpretation of your training metrics:
+
+📊 Training Summary
+Final Training Loss: 1.0389
+
+Final Batch Loss: 0.877
+
+Training Duration: ~118 seconds
+
+Samples per Second: ~85
+
+Steps per Second: ~5.3
+
+Epochs Completed: 1.0​
+
+📈 Interpreting the Results
+Training Loss: A final training loss of approximately 1.0389 is a reasonable starting point for fine-tuning BERT on a multi-class classification task like the Yelp Review dataset. Loss values can vary based on factors such as dataset complexity, class imbalance, and model configuration.​
+
+Batch Loss Trend: The last recorded batch loss of 0.877 indicates a downward trend, suggesting that the model was still learning effectively at the end of the training.​
+
+Training Time: Completing training in under 2 minutes is efficient, especially considering the use of a subset of the dataset for demonstration purposes.​
+
