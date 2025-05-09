@@ -1,0 +1,15 @@
+$ python google-gemini-custom-tool.py 
+Enter your Google API Key: 
+
+=== Example 1: Simple Greeting ===
+Model Response: Hello! How can I help you today?
+Tool Calls: []
+
+=== Example 2: Multiplication Request ===
+Model Response:
+Tool Calls: [{'name': 'multiply', 'args': {'a': 6.0, 'b': 7.0}, 'id': '3ef2c524-1cd1-459e-8b36-33fd29be37f3', 'type': 'tool_call'}]
+{'name': 'multiply', 'args': {'a': 6.0, 'b': 7.0}, 'id': '3ef2c524-1cd1-459e-8b36-33fd29be37f3', 'type': 'tool_call'}
+42
+
+=== Final Response After Tool Execution ===
+content='' additional_kwargs={'function_call': {'name': 'multiply', 'arguments': '{"a": 6.0, "b": 7.0}'}} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'model_name': 'gemini-2.0-flash', 'safety_ratings': []} id='run--a321c54d-4e2a-420d-baaa-432a00599caf-0' tool_calls=[{'name': 'multiply', 'args': {'a': 6.0, 'b': 7.0}, 'id': 'a19cbe58-67ea-4dd1-8c11-a62e3d3749f4', 'type': 'tool_call'}] usage_metadata={'input_tokens': 20, 'output_tokens': 5, 'total_tokens': 25, 'input_token_details': {'cache_read': 0}}
